@@ -1,7 +1,7 @@
 
 async function carregarSecao(categorias, containerId) {
     try {
-        const resposta = await fetch(`http://localhost:3000/produtos/${categorias}`);
+        const resposta = await fetch(`https://storebackend-5dsn.onrender.com/${categorias}`);
         const produtos = await resposta.json();
 
         const container = document.getElementById(containerId);
